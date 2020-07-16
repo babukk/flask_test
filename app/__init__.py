@@ -38,7 +38,7 @@ def create_app(config_name):
 
     login_manager.init_app(app)
     login_manager.login_message = "Вы должны авторизоваться для получения доступа."
-    login_manager.login_view = 'login'
+    login_manager.login_view = 'auth.login'
 
     Bootstrap(app)
 
