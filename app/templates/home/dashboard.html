@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block body %}
+<div class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-message">
+                    {% if current_user.is_admin %}
+                    <h1>The Admin's Dashboard</h1>
+                    {% else %}
+                    <h1>The Dashboard</h1>
+                    {% endif %}
+                    <h3>We made it here!</h3>
+                    <hr class="intro-divider">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.log
+*.bak
+logs/
+migrations/
+instance/config.py
